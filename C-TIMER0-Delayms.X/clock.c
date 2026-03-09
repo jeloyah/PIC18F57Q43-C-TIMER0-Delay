@@ -3,6 +3,7 @@
 
 void CLOCK_Initialize(void)
 {
+
 	/* HFINTOSC enabled */
     OSCEN = 0x40;
     
@@ -13,5 +14,6 @@ void CLOCK_Initialize(void)
     OSCCON1 = 0x60;
     
     /* Clear clock switch flag */
-    PIR0 &= 0xF7;
+    PIR0 &= 0xF7; 
+    
 }
